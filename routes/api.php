@@ -12,3 +12,4 @@ Route::get('/cliente', [ClienteController::class, 'listar']);
 Route::post('/cliente', [ClienteController::class, 'salvar']);
 Route::put('/cliente/{id}', [ClienteController::class, 'editar']);
 Route::delete('/cliente/{id}', [ClienteController::class, 'excluir']);
+Route::get('/cliente/{id}', [ClienteController::class, 'listarPeloId']);
